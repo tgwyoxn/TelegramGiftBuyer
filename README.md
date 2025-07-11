@@ -1,7 +1,7 @@
 # 🎁 TelegramGiftsBot
-https://github.com/leozizu/TelegramGiftsBot
-https://github.com/leozizu/TelegramGiftsBot
-https://github.com/leozizu/TelegramGiftsBot
+
+офиц https://github.com/leozizu/TelegramGiftsBot
+
 Telegram-бот для покупки подарков из маркетплейса через Telegram API. Поддерживает добавление профилей и автоматизацию действий. Никаких комиссий, исходный код скрипта доступен всем.
 
 ---
