@@ -13,8 +13,6 @@
 купить звезды - [@EclipseStars_bot](https://t.me/EclipseStars_bot?start=401byb)
 купить звезды - [@EclipseStars_bot](https://t.me/EclipseStars_bot?start=401byb)
 купить звезды - [@EclipseStars_bot](https://t.me/EclipseStars_bot?start=401byb)
-купить звезды - [@EclipseStars_bot](https://t.me/EclipseStars_bot?start=401byb)
-купить звезды - [@EclipseStars_bot](https://t.me/EclipseStars_bot?start=401byb)
 
 ## 📦 Возможности
 
