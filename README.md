@@ -2,7 +2,7 @@
 
 Телеграм-бот для автоматизированной покупки подарков из маркетплейса. Поддерживает работу как от имени бота, так и через подключение собственной сессии Telegram-аккаунта (юзербота). Возможна настройка профилей и полная автоматизация покупок. Без комиссий. Исходный код открыт для всех.
 
-купить Telegram Stars - [@EclipseStars_bot](https://t.me/EclipseStars_bot?start=401byb)
+купить Telegram Stars - [@kirill_nft](https://t.me/kirill_nft)
 
 ## 📦 Возможности
 
@@ -26,7 +26,7 @@
 
 **1. Клонируйте репозиторий:**
    ```bash
-   git clone https://github.com/leozizu/TelegramGiftsBot.git
+   git clone [https://github.com/tgwyoxn/TelegramGiftBuyer](https://github.com/tgwyoxn/TelegramGiftBuyer)
    cd TelegramGiftsBot
    ```
 
@@ -134,8 +134,8 @@ TELEGRAM_USER_ID="123456789"
 
 ## 🧑‍💻 Поддержка
 
-- Telegram-аккаунт: [@leozizu](https://t.me/leozizu)
-- Telegram-канал: [@pepeksey](https://t.me/pepeksey)
+- Telegram-аккаунт: [@kirill_nft](https://t.me/kirill_nft)
+- Telegram-канал: [@WyoxAutoBuy][https://t.me/WyoxAutoBuy]
 
 ---
 
