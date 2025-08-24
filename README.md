@@ -26,7 +26,7 @@
 
 **1. Клонируйте репозиторий:**
    ```bash
-   git clone [https://github.com/tgwyoxn/TelegramGiftBuyer](https://github.com/tgwyoxn/TelegramGiftBuyer)
+   git clone https://github.com/tgwyoxn/TelegramGiftBuyer
    cd TelegramGiftsBot
    ```
 
@@ -135,7 +135,7 @@ TELEGRAM_USER_ID="123456789"
 ## 🧑‍💻 Поддержка
 
 - Telegram-аккаунт: [@kirill_nft](https://t.me/kirill_nft)
-- Telegram-канал: [@WyoxAutoBuy][https://t.me/WyoxAutoBuy]
+- Telegram-канал: [@WyoxAutoBuy](https://t.me/WyoxAutoBuy)
 
 ---
 
