@@ -69,7 +69,7 @@ async def show_guest_menu(message: Message):
         "✅ Вы можете <b>получать подарки</b> от этого бота.\n"
         "💰 Вы можете <b>пополнить</b> звёзды в бот.\n"
         "⛔️ У вас <b>нет доступа</b> к панели управления.\n\n"
-        "<b>🤖 Исходный код: <a href=\"https://github.com/leozizu/TelegramGiftsBot\">GitHub</a></b>\n"
-        "<b>🐸 Автор: @leozizu</b>\n<b>📢 Канал: @pepeksey</b>",
+        "<b>🤖 Исходный код: <a href=\"https://github.com/tgwyoxn/TelegramGiftBuyer\">GitHub</a></b>\n"
+        "<b>🐸 Автор: @kirill_nft</b>\n<b>📢 Канал: @WyoxAutoBuy</b>",
         reply_markup=kb
     )
