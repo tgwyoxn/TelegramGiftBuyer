@@ -10,6 +10,7 @@ from aiogram import Bot, Dispatcher, F
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 from aiogram.fsm.storage.memory import MemoryStorage
+from aiohttp import web  # <<< NEW
 
 # --- Внутренние модули ---
 from services.config import (
@@ -256,6 +257,23 @@ async def gift_purchase_worker(bot):
         await asyncio.sleep(0.5)
 
 
+# --- Keepalive мини-сервер для Render + UptimeRobot ---  # <<< NEW
+async def _health(_request):
+    return web.Response(text="OK")
+
+async def start_web_server():
+    app = web.Application()
+    app.router.add_get("/", _health)
+    app.router.add_get("/health", _health)
+    runner = web.AppRunner(app)
+    await runner.setup()
+    port = int(os.environ.get("PORT", 8080))  # Render подставит $PORT
+    site = web.TCPSite(runner, "0.0.0.0", port)
+    await site.start()
+    logger.info(f"Keepalive web server started on 0.0.0.0:{port}")
+# -------------------------------------------------------  # <<< NEW
+
+
 async def main() -> None:
     """
     Асинхронная точка входа в приложение.
@@ -297,8 +315,14 @@ async def main() -> None:
     # Запуск userbot, если сессия уже существует
     await try_start_userbot_from_config(USER_ID)
 
+    # Фоновые задачи
     asyncio.create_task(gift_purchase_worker(bot))
     asyncio.create_task(userbot_gifts_updater(USER_ID))
+
+    # <<< NEW: стартуем веб-сервер (порт $PORT) параллельно с polling
+    asyncio.create_task(start_web_server())
+
+    # Старт polling
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
